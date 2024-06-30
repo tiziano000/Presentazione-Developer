@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.8;
+}
+
+a.btn {
+  color: #000;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: yellow;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 46px;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 100px;
+}
+
+section h3.titolo {
+  color: #414a4f;
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+section p {
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 65px;
+  padding: 0 20px;
+  line-height: 2;
+}
+
+ul,
+nav {
+  list-style: none;
+}
+
+
+
+.principale {
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.principale .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.principale h1 {
+  font: bold 60px "Montserrat Alternates", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-shadow: -1px -1px 0 rgb(250, 250, 250), 1px -1px 0 #000, 1px 1px 0#000;
+}
+
+.principale h3 {
+  font: bold 28px "Open Sans", sans-serif;
+  margin-bottom: 40px;
+}
+
+ul.griglia {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio .griglia li {
+  padding: 20px;
+  height: 420px;
+  border-radius: 5px;
+  background-clip: content-box;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio .griglia li.small {
+  flex-basis: 40%;
+}
+
+.portfolio .griglia li.large {
+  flex-basis: 60%;
+}
+
+.caratteristiche {
+  background-color: #f7f7f7;
+}
+
+.caratteristiche p {
+  text-align: center;
+  margin: auto;
+}
+
+.caratteristiche .griglia li {
+  padding: 0 30px;
+  flex-basis: 33%;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.caratteristiche .griglia li h4 {
+  background-color: #fff;
+  font-size: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+
+.newsletter {
+  background-color: #f7f7f7;
+}
+
+.btn:hover {
+  background-color: #eeff0093;
+}
+
+Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-align: justify;
+  color: #fff;
+  background-color: #37393a;
+  padding: 80px 0;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+footer ul li {
+  margin: 0 9px;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+#invioMail:hover {
+  color: rgba(221, 255, 0, 0.208);
+}
+
+
+/*INIZIO MEDIAQUERY*/
+/*INIZIO MEDIAQUERY*/
+/*INIZIO MEDIAQUERY*/
+/*INIZIO MEDIAQUERY*/
+/*INIZIO MEDIAQUERY*/
+
+
+@media (max-width: 600px) {
+
+
+  section {
+    padding: 80px 30px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .principale {
+    min-height: 600px;
+  }
+
+  .principale h1 {
+    font-size: 42px;
+  }
+
+  .principale h3 {
+    font-size: 24px;
+  }
+
+  .principale a.btn {
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  footer {
+    padding: 80px 15px;
+  }
+
+  .recensioni .recensione {
+    font-size: 16px;
+  }
+
+  .recensioni .autore {
+    font-size: 16px;
+  }
+
+  .caratteristiche .griglia li {
+    flex-basis: 100%;
+  }
+
+  .portfolio .griglia li.small,
+  .portfolio .griglia li.large {
+    flex-basis: 100%;
+  }
+
+  header {
+    padding: 20px 50px;
+  }
+
+  section {
+    padding: 100px 50px;
+  }
+
+}
